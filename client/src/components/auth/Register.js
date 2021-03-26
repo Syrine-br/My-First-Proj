@@ -21,11 +21,11 @@ function Register() {
         passwordVerify,
       };
 
-      // await axios.post("http://localhost:5000/auth/", registerData);
-      await axios.post(
+      await axios.post("http://localhost:5000/auth/", registerData);
+      /*await axios.post(
         "https://mern-auth-template-tutorial.herokuapp.com/auth/",
         registerData
-      );
+      );*/
       await getLoggedIn();
       history.push("/");
     } catch (err) {
